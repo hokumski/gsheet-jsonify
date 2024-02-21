@@ -1,0 +1,6 @@
+Flask~=2.3.2
+requests
+google-cloud
+google-auth
+google_auth_httplib2
+google-api-python-client
