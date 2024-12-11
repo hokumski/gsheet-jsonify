@@ -84,6 +84,20 @@ GET https://servicename.xyz/google/sheets/1S2OmeRan3domLet4Ter5s/Sheet1?values_m
 **TODO**: describe ``include_first_row`` and ``break_if_na`` parameters
 
 
+You may use filters.
+Add one or more parameters with prefix "filter_" and the name of the column, like
+```
+GET https://servicename.xyz/google/sheets/1S2OmeRan3domLet4Ter5s/Sheet1?&filter_column_1=value%20A2
+```
+```json
+[
+  {
+    "column_1": "value A2",
+    "column_two": "value B2"
+  }
+]
+```
+
 ## Writing Google Sheet
 
 Imagine we want to create table like in example for reading:
